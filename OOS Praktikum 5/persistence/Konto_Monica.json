@@ -1,0 +1,12 @@
+[
+  {
+    "CLASSNAME": "Bank.IncomingTransfer",
+    "INSTANCE": {
+      "sender": "Konto_Marlyne",
+      "recipient": "Konto_Monica",
+      "date": "01.12.2024",
+      "amount": 50.0,
+      "description": "Überweisung"
+    }
+  }
+]

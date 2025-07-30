@@ -1,0 +1,12 @@
+[
+  {
+    "CLASSNAME": "Bank.Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.05,
+      "outgoingInterest": 0.02,
+      "date": "12.12.2024",
+      "amount": 700.0,
+      "description": "Salary"
+    }
+  }
+]

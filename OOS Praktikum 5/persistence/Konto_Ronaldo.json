@@ -1,0 +1,22 @@
+[
+  {
+    "CLASSNAME": "Bank.Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.05,
+      "outgoingInterest": 0.02,
+      "date": "08.08.2024",
+      "amount": 150.0,
+      "description": "Payment Ronaldo"
+    }
+  },
+  {
+    "CLASSNAME": "Bank.Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.05,
+      "outgoingInterest": 0.02,
+      "date": "05.12.2024",
+      "amount": 50.0,
+      "description": "Payment 2 Ronaldo"
+    }
+  }
+]

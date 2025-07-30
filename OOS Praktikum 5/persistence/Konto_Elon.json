@@ -1,0 +1,22 @@
+[
+  {
+    "CLASSNAME": "Bank.Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.05,
+      "outgoingInterest": 0.1,
+      "date": "17.12.2024",
+      "amount": 1.0E11,
+      "description": "Rich"
+    }
+  },
+  {
+    "CLASSNAME": "Bank.OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "Konto_Elon",
+      "recipient": "Konto_Feran",
+      "date": "17.12.2024",
+      "amount": 500.0,
+      "description": "Early gift"
+    }
+  }
+]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+    AccountView.fxml: JavaFX layout for displaying account details.
+    This layout contains:
+    - Labels for the account name and balance.
+    - A ListView to display the list of transactions.
+    - Buttons for adding transactions, sorting, and filtering.
+    - A "Back" button to navigate to the main view.
+-->
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <!-- Label to display the account name -->
+    <Label fx:id="accountNameLabel" text="Account: " style="-fx-font-size: 16px;" />
+
+    <!-- Label to display the account balance -->
+    <Label fx:id="balanceLabel" text="Balance: 0.0" />
+
+    <!-- ListView to display transactions for the selected account -->
+    <ListView fx:id="transactionListView" prefHeight="300" />
+
+    <!-- HBox containing buttons for Add, Sort, and Filter operations -->
+    <HBox spacing="10">
+        <!-- Button to add a new transaction -->
+        <Button text="Add Transaction" onAction="#handleAddTransaction" />
+
+        <!-- Buttons to sort transactions in ascending and descending order -->
+        <Button text="Sort Asc" onAction="#handleSortAsc" />
+        <Button text="Sort Desc" onAction="#handleSortDesc" />
+
+        <!-- Buttons to filter transactions by positive and negative values -->
+        <Button text="Filter Positive" onAction="#handleFilterPositive" />
+        <Button text="Filter Negative" onAction="#handleFilterNegative" />
+    </HBox>
+
+    <!-- Button to navigate back to the main view -->
+    <Button text="Back" onAction="#handleBack" />
+</VBox>

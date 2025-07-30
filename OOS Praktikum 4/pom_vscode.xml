@@ -2,22 +2,32 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <artifactId>P4</artifactId>
-    <groupId>de.fh_aachen.oos</groupId>
-    <modelVersion>4.0.0</modelVersion>
-    <version>1.0-SNAPSHOT</version>
-
+    <artifactId>oos_p4</artifactId>
     <build>
         <plugins>
             <plugin>
+                <!-- mvn clean jacoco:prepare-agent install jacoco:report -->
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.8</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <groupId>org.apache.maven.plugins</groupId>
-                <configuration>
-                    <compilerArgs>
-                        <arg>--release</arg>
-                        <arg>17</arg>
-                    </compilerArgs>
-                </configuration>
                 <version>3.13.0</version>
             </plugin>
             <plugin>
@@ -40,7 +50,6 @@
             <version>2.11.0</version>
         </dependency>
     </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -52,6 +61,10 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <groupId>de.fh_aachen.oos</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.release>17</maven.compiler.release>

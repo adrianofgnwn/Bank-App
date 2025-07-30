@@ -1,0 +1,32 @@
+[
+  {
+    "CLASSNAME": "Bank.Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.0,
+      "outgoingInterest": 0.0,
+      "date": "30.11.2024",
+      "amount": 1000.0,
+      "description": "Salary November"
+    }
+  },
+  {
+    "CLASSNAME": "Bank.OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "Konto_TypeSorted",
+      "recipient": "Vermieter",
+      "date": "02.12.2024",
+      "amount": 400.0,
+      "description": "Miete"
+    }
+  },
+  {
+    "CLASSNAME": "Bank.Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.0,
+      "outgoingInterest": 0.0,
+      "date": "03.12.2024",
+      "amount": 150.0,
+      "description": "Bonus"
+    }
+  }
+]

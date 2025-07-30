@@ -1,0 +1,12 @@
+[
+  {
+    "CLASSNAME": "Bank.Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.0,
+      "outgoingInterest": 0.0,
+      "date": "15.12.2024",
+      "amount": 200.0,
+      "description": "Payment Neymar"
+    }
+  }
+]
